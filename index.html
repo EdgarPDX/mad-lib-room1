@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Vast+Shadow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
@@ -15,21 +14,30 @@
 
 <body>
    <header>
-        HELLO from Adele
+        HELLO <br>from Adele
     </header>
+    <img src="https://bit.ly/2BQ8cQ9" alt="Photo of Adele">
     <main>
-        <img src="https://bit.ly/2YIUtn5" alt="Photo of Adele">
-        <section>
+        <!-- <img src="https://bit.ly/2YIUtn5" alt="Photo of Adele"> -->
+        <section class="container">
             <div class="answers" id="inputs">
-                Noun
-                <input id="noun1"/>
-                Verb
-                <input id="verb1"/>
-                Pronoun
-                <input id="pronouns">
-                Location
-                <input id="location">
-                <button id="button">Submit</button>
+                <section class="all-inputs">
+                    <div class="text-input">Noun</div>
+                    <input class="input-color" id="noun1"/>
+                </section>
+                <section class="all-inputs">
+                    <div class="text-input">Verb</div>
+                    <input class="input-color" id="verb1"/>
+                <section class="all-inputs">
+                    <div class="text-input">Pronoun</div>
+                    <input class="input-color" id="pronouns">
+                <section class="all-inputs">
+                    <div class="text-input">Location</div>
+                    <input class="input-color" id="location">
+                </section>
+                <section class="button all-inputs">
+                    <button id="button">Submit</button>
+                </section>
             </div>
 
             <div class="hidden" id="madlib">Hello, it's <span id="me"></span><br>
