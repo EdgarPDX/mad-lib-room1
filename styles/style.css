@@ -19,7 +19,8 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #f5eee5;
+
 }
 
 main {
@@ -45,20 +46,25 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+img {
+    width: 100vw;
 }
 
-footer {
+header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: center;
+    align-items: center;
+
+    background-color: #121212;
+    height: var(--header-height);
     box-shadow: var(--shadow);
+    font-size: 2rem;
+    font-family: 'Vast Shadow', cursive;
+    color: #ffffff;
+    
 }
+
+
   
 footer {
     position: fixed;
@@ -67,7 +73,7 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: #121212;
     box-shadow: var(--shadow);
 }
 
