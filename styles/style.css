@@ -1,18 +1,5 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1);
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
@@ -20,7 +7,9 @@ body {
     
     font-family: 'roboto';
     background-color: #f5eee5;
-
+    /* background-image: url(https://bit.ly/2BQ8cQ9);
+    background-size: 100%;
+    background-repeat: no-repeat */
 }
 
 main {
@@ -28,29 +17,28 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: calc(var(--footer-height)); */
-    height: 50vh;
+    height: 100vh;
+    background-image: url(https://bit.ly/2BQ8cQ9);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
-    background-color: #f5f5f5;
+    background-color: #f5f5f5b3;
     width: 1000px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter); */
     border: solid 2px #3d403d;
     border-radius: 2px;
+    overflow: scroll;
 }
-
 img {
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: auto;
 
 }
 
@@ -81,9 +69,6 @@ footer {
     box-shadow: var(--shadow);
 }
 
-.hidden {
-    display: none;
-}
 .answers {
     display: flex;
     flex-direction: column;
@@ -92,10 +77,14 @@ footer {
 }
 .input-color {
     background-color: #f5eee5;
+    font-size: 1.2rem;
     width: 100%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
     border: solid 1px;
     border-radius: 3px;
+    text-align: center;
+    justify-content: center;
 }
 
 .all-inputs {
@@ -105,11 +94,37 @@ footer {
     align-items: center;
     justify-items: center;
 }
- .button {
-     padding-bottom: 10%;
+
+.button {
+     padding-bottom: 15%;
+ }
+
+ button {
+    color: whitesmoke;
+    background-color: black;
+    height: 1.5rem;
+    border: solid 1px;
+    border-radius: 5px;
+    font-size: 1rem;
+    
  }
 
  .text-input {
      border-bottom: solid 2px black;
      margin-bottom: 2px;
+     font-weight: bolder;
  }
+
+ .hidden {
+    display: none;
+}
+
+.song {
+    padding: 50px;
+    font-size: 1em;
+}
+
+.bold-answer {
+    font-weight: 900;
+    
+}
