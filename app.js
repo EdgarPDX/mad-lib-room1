@@ -6,24 +6,34 @@ console.log(boogerButton);
 // set event listeners to update state and DOM
 
 boogerButton.addEventListener('click', () => {
+    //noun
     const noun1 = document.getElementById('noun1').value;
-    //console.log(noun1);
-    const noun1ans = document.getElementById('me')
+    const noun1ans = document.getElementById('me');
     console.log(noun1ans);
+    noun1ans.textContent = noun1;
 
+    //verb
     const verb1 = document.getElementById('verb1').value;
-    //console.log(verb1);
-    const verb1ans = document.getElementById('wondering')
-    console.log(verb1ans)
+    const verb1ans = document.getElementById('wondering');
+    console.log(verb1ans);
+    verb1ans.textContent = verb1;
 
+    //pronoun
     const pronouns = document.getElementById('pronouns').value; 
-    //console.log(pronouns);
     const pronoun1ans = document.getElementById('everything');
-    console.log(pronoun1ans)
+    console.log(pronoun1ans);
+    pronoun1ans.textContent = pronouns;
 
+    //location
     const location = document.getElementById('location').value;
-    //console.log(location);
-    const location1ans = document.getElementById('california')
-    console.log(location1ans)
+    const location1ans = document.getElementById('california');
+    console.log(location1ans);
+    location1ans.textContent = location;
+    
+    const hideInputs = document.getElementById('inputs');
+    hideInputs.classList.add('hidden');
+    
+    const madLib = document.getElementById('madlib');
+    madLib.classList.remove('hidden');
 
 })
