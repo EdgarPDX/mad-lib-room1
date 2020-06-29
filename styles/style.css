@@ -34,6 +34,7 @@ main {
     align-items: center;
     border: solid 2px #3d403d;
     border-radius: 2px;
+    overflow: scroll;
 }
 img {
     width: 100%;
@@ -111,6 +112,7 @@ footer {
  .text-input {
      border-bottom: solid 2px black;
      margin-bottom: 2px;
+     font-weight: bolder;
  }
 
  .hidden {
@@ -118,5 +120,11 @@ footer {
 }
 
 .song {
-    padding: 25px;
+    padding: 50px;
+    font-size: 1em;
+}
+
+.bold-answer {
+    font-weight: 900;
+    
 }
